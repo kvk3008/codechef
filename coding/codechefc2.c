@@ -1,13 +1,22 @@
 #include<stdio.h>
 int main()
 {
-int test;
-scanf("%d",&test);
-while(test--)
-{
-int N,M;
-scnaf("%d %d",&N,&M);
+	long long int test,N,M,x_e,x_o;
+	scanf("%lld",&test);
+	while(test--)
+	{
 
-}
-return 0;
+		scanf("%lld %lld",&N,&M);
+		
+                if(N%2==1 && M%2==1)
+                { 
+                x_o=((N*M)/2);
+		x_e=(N*M);
+                printf("%lld/%lld\n",x_o,x_e);  
+                }
+                else
+                printf("1/2\n");
+ 
+	}
+	return 0;
 }
