@@ -3,7 +3,9 @@ compiler:
   - gcc
   - clang
 # Change this to your needs
-script: 
- - ls coding/ | gcc
+script:
+ - ls .
+ - ls coding/*.c
+ - ls coding/*.c | gcc
 
 
