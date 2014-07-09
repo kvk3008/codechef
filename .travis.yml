@@ -3,6 +3,7 @@ compiler:
   - gcc
   - clang
 # Change this to your needs
-script: ./configure && make
+script: 
+ - ls coding/ | gcc
 
 
