@@ -5,7 +5,7 @@ compiler:
 # Change this to your needs
 script:
  - ls .
- - ls coding/*.c
- - ls coding/*.c | gcc
+ - gcc divisor.c
+ 
 
 
