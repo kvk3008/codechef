@@ -5,7 +5,8 @@ compiler:
 # Change this to your needs
 script:
  - ls -F
- - pwd
+ - cd coding
+ - ls
  
  
 
