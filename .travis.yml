@@ -6,7 +6,8 @@ compiler:
 script:
  - ls -F
  - cd coding
- - gcc divisor.c
+ - gcc *.c
+
  
  
 
