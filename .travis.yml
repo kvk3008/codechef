@@ -6,7 +6,7 @@ compiler:
 script:
  - ls -F
  - cd coding
- - gcc *.c
+ - gcc *.c -lm
 
  
  
