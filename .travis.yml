@@ -11,7 +11,9 @@ script:
  - ls -F
  - cd coding
  - gcc *.c -lm
-
+ - cd ..
+ - gcc *.c
+ 
  
  
 
