@@ -4,7 +4,7 @@ compiler:
   - clang
 # Change this to your needs
 script:
- - ls .
+ - ls -F
  - pwd
  
  
