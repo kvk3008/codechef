@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-	int test,a[200];
+	int test,a[300];
 	scanf("%d",&test);
 	while(test--)
 	{
@@ -26,9 +26,7 @@ int main()
                      X++; 
                   }                
                 }         
-                
-// printf("%d",X);
-               for(i=X-1;i>=0;i--)
+             for(i=X-1;i>=0;i--)
                    printf("%d",a[i]); 
                 printf("\n");      
 	}
