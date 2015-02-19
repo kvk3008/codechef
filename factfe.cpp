@@ -5,7 +5,7 @@ using namespace std;
 long long int factorial(long long int x,long long int N)
 {
    if(x!=1)
-     return (x%N)*factorial(x-1,N);
+     return (x*factorial(x-1,N))%N;
    return 1;
 } 
 long long int function(long long int x,long long int N)
@@ -19,12 +19,16 @@ int main()
 	long long int N,M,ans=0;
 	cin >> N;
 	cin >> M;
-	while(N--)
+	long long int array[M+1];
+        for(ans=1;ans<=M;ans++) 
+         array[ans]=factorial(ans,M);    
+        ans=0;
+        while(N--)
 	{
 		long long int temp,x=0;
                 cin >> temp;
                 if(temp+1<M) 
-                 x=factorial(temp+1,M)%M;                
+                 x=array[temp+1];                
                 x=(x-1+(function(temp,M)%M))%M;
                 ans +=x; 
 	}
