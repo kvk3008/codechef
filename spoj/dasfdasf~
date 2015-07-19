@@ -1,0 +1,25 @@
+if((output[k] <= output[j-k-1]) && temp==0)
+                        {
+                                if(input[i]+1 > '9')
+                                        s=input[i];
+                                else
+                                        s=input[i]+1;
+                                temp=1;
+                                input[i]=s;
+                                input[j-i-1]=s;
+                        }
+                        else if(input[j-i-1] < input[i])
+                        {
+                                s=input[i];
+                                temp=1;
+                                input[i]=s;
+                                input[j-i-1]=s;
+                        }
+                        else if((input[i] < input[j-i-1]) && temp==1)
+                        {
+                                s=input[i];
+                                temp=1;
+                                input[i]=s;
+                                input[j-i-1]=s;
+                        }
+
